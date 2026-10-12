@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 12, 2026 at 11:40 AM
+-- Generation Time: Oct 12, 2026 at 12:05 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -36,6 +36,17 @@ CREATE TABLE `cars` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `cars`
+--
+
+INSERT INTO `cars` (`car_id`, `make`, `model`, `price`, `yom`) VALUES
+(1, 'Holden', 'Astra', 14000, 2009),
+(2, 'BMW', 'X3', 35000, 2010),
+(3, 'Ford', 'Falcon', 39000, 2013),
+(4, 'Toyota', 'Corolla', 20000, 2012),
+(5, 'Holden', 'Commodore', 28000, 2009);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -53,7 +64,7 @@ ALTER TABLE `cars`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
